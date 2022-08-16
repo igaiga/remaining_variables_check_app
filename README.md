@@ -1,24 +1,16 @@
-# README
+# 複数リクエストで残存する変数をテストするサンプルコード
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 起動手順
 
-Things you may want to cover:
+```
+rails assets:precompile
+RAILS_ENV=production rackup config.ru
+```
 
-* Ruby version
+## コード作成時の手順メモ
 
-* System dependencies
+```
+rails g controller foo index
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+FooController#index をテストコードに変更
